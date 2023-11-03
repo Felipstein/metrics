@@ -1,0 +1,36 @@
+name: Build & Deploy Server (Production)
+
+on:
+  push:
+    branches:
+      - master
+    paths:
+      - apps/server/**
+      - packages/contracts/**  # Adicionado para acionar o fluxo de trabalho quando o contracts é alterado
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: 18.15.0
+
+      - name: Install pnpm
+        run: npm install -g pnpm  # Assumindo que você está usando pnpm
+
+      - name: Install dependencies
+        run: pnpm install  # Isso instalará as dependências necessárias em apps/server e em packages/contracts
+
+      # Se o pacote @metrics/contracts precisar de um processo de construção, você pode adicioná-lo aqui
+      # - name: Build contracts
+        # run: cd packages/contracts && pnpm run build  # Apenas se o contracts tiver um script de build
+
+      - name: Deploy
+        run: echo "Deployed"  # Substitua isso pelo seu script de implantação no Render
+
