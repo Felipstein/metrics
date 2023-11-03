@@ -1,0 +1,8 @@
+{
+  "recommendations": [
+    "dbaeumer.vscode-eslint",
+    "humao.rest-client",
+    "prisma.prisma",
+    "bradlc.vscode-tailwindcss"
+  ]
+}

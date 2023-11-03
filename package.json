@@ -1,0 +1,14 @@
+{
+  "name": "metrics",
+  "version": "1.0.0",
+  "author": "Felipe Oliveira",
+  "license": "MIT",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "private": true,
+  "dependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
