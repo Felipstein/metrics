@@ -1,6 +1,6 @@
 import { EntityBuilder } from './core/EntityBuilder';
 
-import type { Workspace } from '@metrics/contracts/src/types/entities/Workspace';
+import type { Workspace } from '@metrics/contracts/lib/types/entities/Workspace';
 
 export class WorkspaceEntity extends EntityBuilder<Workspace> {
   readonly id: string;

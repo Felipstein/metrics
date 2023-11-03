@@ -1,7 +1,7 @@
 import { WorkspaceEntity } from '../../entities/WorkspaceEntity';
 
 import type { CreateWorkspaceDTO } from './workspace.dtos';
-import type { WorkspaceMembershipRole } from '@metrics/contracts/src/types/entities/WorkspaceMembership';
+import type { WorkspaceMembershipRole } from '@metrics/contracts/lib/types/entities/WorkspaceMembership';
 
 export interface WorkspaceEntityWithUserInfo {
   workspace: WorkspaceEntity;

@@ -1,4 +1,4 @@
-import { WorkspaceMembershipRole } from '@metrics/contracts/src/types/entities/WorkspaceMembership';
+import { WorkspaceMembershipRole } from '@metrics/contracts/lib/types/entities/WorkspaceMembership';
 
 import { WorkspaceEntity } from '../../../entities/WorkspaceEntity';
 import { CreateWorkspaceDTO } from '../../../modules/workspace/workspace.dtos';

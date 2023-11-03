@@ -3,9 +3,9 @@
 import { useAuth } from '@clerk/nextjs';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { CreateWorkspaceBodyRequest, WorkspaceCardInfo } from '@metrics/contracts';
-import { hexColor } from '@metrics/contracts/src/http/defaultValidations/hexColor';
-import { workspaceName } from '@metrics/contracts/src/http/defaultValidations/workspaceName';
-import { workspaceSlug } from '@metrics/contracts/src/http/defaultValidations/workspaceSlug';
+import { hexColor } from '@metrics/contracts/lib/http/defaultValidations/hexColor';
+import { workspaceName } from '@metrics/contracts/lib/http/defaultValidations/workspaceName';
+import { workspaceSlug } from '@metrics/contracts/lib/http/defaultValidations/workspaceSlug';
 import { Input, Modal, ModalBody, ModalContent, ModalFooter, ModalHeader } from '@nextui-org/react';
 import { useMutation } from '@tanstack/react-query';
 import { SketchPicker } from 'react-color';

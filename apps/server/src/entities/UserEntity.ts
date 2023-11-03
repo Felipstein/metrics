@@ -1,4 +1,4 @@
-import { User, UserRole } from '@metrics/contracts/src/types/entities/User';
+import { User, UserRole } from '@metrics/contracts/lib/types/entities/User';
 
 import { EntityBuilder } from './core/EntityBuilder';
 

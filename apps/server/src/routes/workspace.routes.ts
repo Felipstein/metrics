@@ -2,17 +2,17 @@ import { RequireAuthProp } from '@clerk/clerk-sdk-node';
 import {
   type CreateWorkspaceResponse,
   createWorkspaceBodyRequest,
-} from '@metrics/contracts/src/http/workspaces/createWorkspace';
-import { deleteWorkspaceParamsRequest } from '@metrics/contracts/src/http/workspaces/deleteWorkspace';
+} from '@metrics/contracts/lib/http/workspaces/createWorkspace';
+import { deleteWorkspaceParamsRequest } from '@metrics/contracts/lib/http/workspaces/deleteWorkspace';
 import {
   type GetWorkspaceByIdOrSlugResponse,
   getWorkspaceByIdOrSlugParamsRequest,
-} from '@metrics/contracts/src/http/workspaces/getWorkspaceByIdOrSlug';
+} from '@metrics/contracts/lib/http/workspaces/getWorkspaceByIdOrSlug';
 import {
   type UpdateWorkspaceResponse,
   updateWorkspaceParamsRequest,
   updateWorkspaceBodyRequest,
-} from '@metrics/contracts/src/http/workspaces/updateWorkspace';
+} from '@metrics/contracts/lib/http/workspaces/updateWorkspace';
 import { Request, Router } from 'express';
 
 import { WorkspaceNotFoundError, SlugAlreadyExistsError } from '../errors';
@@ -21,7 +21,7 @@ import { ensureAuth } from '../middlewares/ensureAuth.middleware';
 import { ensureRole } from '../middlewares/ensureRole.middleware';
 import { mapWorkspaceToRestrict } from '../modules/workspace/workspace.mapper';
 
-import type { GetUserWorkspacesResponse } from '@metrics/contracts/src/http/workspaces/getUserWorkspaces';
+import type { GetUserWorkspacesResponse } from '@metrics/contracts/lib/http/workspaces/getUserWorkspaces';
 
 const workspacesRepo = createWorkspaceRepository();
 

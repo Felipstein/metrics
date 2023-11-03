@@ -1,4 +1,4 @@
-import { RestrictedWorkspace } from '@metrics/contracts/src/types/workspaces/RestrictedWorkspace';
+import { RestrictedWorkspace } from '@metrics/contracts/lib/types/workspaces/RestrictedWorkspace';
 
 import { WorkspaceEntity } from '../../entities/WorkspaceEntity';
 

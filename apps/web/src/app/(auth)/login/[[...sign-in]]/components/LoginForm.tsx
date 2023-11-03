@@ -1,8 +1,8 @@
 'use client';
 
 import { zodResolver } from '@hookform/resolvers/zod';
-import { email } from '@metrics/contracts/src/http/defaultValidations/email';
-import { password } from '@metrics/contracts/src/http/defaultValidations/password';
+import { email } from '@metrics/contracts/lib/http/defaultValidations/email';
+import { password } from '@metrics/contracts/lib/http/defaultValidations/password';
 import Link from 'next/link';
 import { useState } from 'react';
 import { FormProvider, useForm } from 'react-hook-form';

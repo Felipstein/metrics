@@ -1,4 +1,4 @@
-import { WorkspaceMembershipRole } from '@metrics/contracts/src/types/entities/WorkspaceMembership';
+import { WorkspaceMembershipRole } from '@metrics/contracts/lib/types/entities/WorkspaceMembership';
 import { NextFunction, Request, Response } from 'express';
 
 import { ForbiddenError } from '../errors';
