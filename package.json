@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "author": "Felipe Oliveira",
   "license": "MIT",
+  "scripts": {
+    "build:contracts": "cd packages/contracts && pnpm build",
+    "build:packages": "pnpm run build:contracts"
+  },
   "workspaces": [
     "apps/*",
     "packages/*"
