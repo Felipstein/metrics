@@ -1,3 +1,4 @@
 {
-  "extends": "@metrics/eslint-config/node"
+  "extends": "@metrics/eslint-config/node",
+  "ignorePatterns": ["lib"]
 }

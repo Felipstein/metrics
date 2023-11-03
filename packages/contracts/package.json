@@ -1,7 +1,7 @@
 {
   "name": "@metrics/contracts",
   "version": "1.0.0",
-  "main": "src/index.ts",
+  "main": "lib/index.ts",
   "author": "Felipe Oliveira",
   "license": "MIT",
   "scripts": {
