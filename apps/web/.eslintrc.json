@@ -1,3 +1,6 @@
 {
-  "extends": ["next/core-web-vitals", "@metrics/eslint-config/react"]
+  "extends": ["next/core-web-vitals", "@metrics/eslint-config/react"],
+  "rules": {
+    "import/order": "off"
+  }
 }
